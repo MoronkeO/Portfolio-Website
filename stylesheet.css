@@ -29,47 +29,7 @@ body {
   padding: 40px 1rem;
 }
 
-/* Medium screens (tablets) */
-@media (min-width: 600px) {
-  .Navbar .nav-links {
-    display: flex;
-    gap: 1.5rem;
-  }
-  .hamburger {
-    display: none;
-  }
-}
 
-/* Large screens (desktops) */
-@media (min-width: 900px) {
-  body {
-    padding: 2rem;
-  }
-  .hero h1 {
-    font-size: 4.5rem;
-  }
-  .hero .intro, .highlight, .hero-buttons .btn {
-    font-size: 1.125rem;
-  }
-  .what-i-do h2 {
-    font-size: 3rem;
-  }
-  .projects-section {
-    padding: 60px 2rem;
-  }
-  .projects-section h1 {
-    font-size: 3.5rem;
-  }
-  .project-card {
-    flex: 1 1 calc(50% - 1rem);
-    margin: 1rem;
-  }
-  .bio-section {
-    flex-direction: row;
-    gap: 2rem;
-    align-items: flex-start;
-  }
-}
 
 * Hero Section */
 .hero {
