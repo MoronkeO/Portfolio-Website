@@ -8,48 +8,51 @@
 
 
 
+/* Base styles */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #222;
+  color: #fff;
   padding: 1rem 2rem;
-  background-color: #222;
-  color: white;
   position: relative;
 }
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   list-style: none;
 }
 
 .nav-links li a {
-  color: white;
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
 }
 
 .hamburger {
   display: none;
-  font-size: 1.8rem;
+  font-size: 2rem;
   cursor: pointer;
 }
 
-/* Responsive - show hamburger menu */
+/* Mobile styles */
 @media (max-width: 768px) {
   .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #222;
     position: absolute;
-    top: 100%;
+    top: 60px;
     left: 0;
     right: 0;
-    background-color: #222;
-    flex-direction: column;
-    align-items: center;
-    display: none;
+    text-align: center;
+    padding: 1rem 0;
+    z-index: 10;
   }
 
-  .nav-links.active {
+  .nav-links.show {
     display: flex;
   }
 
@@ -57,6 +60,7 @@
     display: block;
   }
 }
+
 
 
 * Hero Section */
