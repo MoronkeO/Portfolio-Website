@@ -66,6 +66,18 @@ nav ul li a {
   }
 }
 
+@media screen and (min-width: 769px) {
+  nav ul {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    padding: 0;
+    box-shadow: none;
+    width: auto;
+    background: none;
+  }
+}
+
 /* SMALL SCREENS (MOBILE) */
 @media screen and (max-width: 768px) {
   body {
