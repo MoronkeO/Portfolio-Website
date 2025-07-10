@@ -95,6 +95,7 @@ nav ul li a {
   .hamburger {
     display: block;
    position: absolute;
+    right: 1.5rem;
   }
 }
 
