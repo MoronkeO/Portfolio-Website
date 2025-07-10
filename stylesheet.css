@@ -99,7 +99,7 @@ nav ul li a.active::after {
 }
 
 .btn.primary:hover {
-  background-color: #fbc400;  /* You can change this to your brand color */
+  background-color: #fbc400;  
   color: #000000;
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);}
