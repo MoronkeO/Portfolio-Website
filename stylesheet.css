@@ -9,26 +9,13 @@
     }
     h1 {
     font-size: calc(40px + (72 - 40) * (100vw - 400px) / (1800 - 400));
-    margin-bottom: 3rem;
-    }
-    h2 {
-    font-size: calc(32px + (48 - 32) * (100vw - 400px) / (1800 - 400));
-    margin-bottom: 1.5rem;
-    }
-    h3 {
-    font-size: calc(20px + (28 - 20) * (100vw - 400px) / (1800 - 400));
-    }
+  
     p {
     font-size: calc(16px + (20 - 16) * (100vw - 400px) / (1800 - 400));
     margin-bottom:2rem;
     }
 
-    a {
-        font-size: calc(16px + (20 - 16) * (100vw - 400px) / (1800 - 400));
-        text-decoration: none;
-    }
-
-
+    
 
 .Navbar {
   width: 90%;
@@ -81,6 +68,7 @@ nav ul li a.active::after {
 }
 
 .hero h1 {
+  ont-size: calc(40px + (72 - 40) * (100vw - 400px) / (1800 - 400))
   font-size: 4.5rem;
   font-weight: 750;
   margin-top: 30px;
