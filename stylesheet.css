@@ -56,11 +56,6 @@ nav ul li a {
 /* ==== MEDIA QUERIES ==== */
 
 /* MEDIUM SCREENS (TABLET) */
-@media screen and (min-width: 1025px){
- .hamburger {
-  display: none;
-}
-}
 @media screen and (max-width: 1024px) {
   body {
     font-size: 16px;
@@ -77,6 +72,13 @@ nav ul li a {
     font-size: 14px;
  
   }
+ .hamburger {
+    display: block;
+   position: absolute;
+    right: 1.5rem;
+  }
+}
+
  #typing-text {
     font-size: 2.5rem;
   line-height: 1.1;
@@ -103,14 +105,7 @@ nav ul li a {
     display: flex;
   }
 
-  .hamburger {
-    display: block;
-   position: absolute;
-    right: 1.5rem;
-  }
-}
-
-
+ 
 
 * Hero Section */
 .hero {
