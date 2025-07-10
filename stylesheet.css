@@ -9,57 +9,75 @@
 
 
 /* Base styles */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #222;
-  color: #fff;
-  padding: 1rem 2rem;
-  position: relative;
-}
-
-.nav-links {
-  display: flex;
-  gap: 1.5rem;
-  list-style: none;
-}
-
-.nav-links li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.hamburger {
-  display: none;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-/* Mobile styles */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background: #222;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    padding: 1rem 0;
+header {
+    position: fixed;
+    width: 100%;
     z-index: 10;
-  }
-
-  .nav-links.show {
-    display: flex;
-  }
-
-  .hamburger {
-    display: block;
-  }
 }
+nav {
+    overflow: hidden;
+    background: var(--white);
+    height: 60px;
+}
+.navexpanded {
+    height: 170px;
+}
+
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    text-align: center;
+    }
+    nav ul > li {
+    margin-top: 14px;
+    flex-basis: 100%;
+    }
+    nav ul li a {
+    text-decoration: none;
+    color: var(--black);
+    margin: 20px;
+    }
+    nav ul li a:hover {
+    text-decoration: none;
+    color: var(--dark-grey);
+    background: var(--accent-colour);
+    }
+
+    #logo {
+        margin-right: auto;
+        flex-basis: 50%;
+        text-align: left;
+    }
+        #logo img {
+        height: 2rem;
+        width: auto;
+        }
+        #menu-icon, #close-icon {
+        margin-left: auto;
+        flex-basis: 50%;
+        text-align: right;
+        font-size: 40px;
+        margin-top: 0px;
+        }
+
+        #close-icon {
+            display:none;
+        }
+        .navexpanded #close-icon {
+            display:inline-block;
+        }
+        .navexpanded #menu-icon {
+            display:none;
+        }
+        #logo a:hover,
+        #menu-icon a:hover,
+        #close-icon a:hover {
+        background: none;
+        }
+
+
 
 
 
