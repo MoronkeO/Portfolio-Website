@@ -452,7 +452,7 @@ nav ul li a.active::after {
 }
 
 /* Small devices (i.e. tablets in portrait) */
-@media (min-width: 600px) {
+@media (min-width: 600px-768px) {
     nav {
         height: 60px;
         }
