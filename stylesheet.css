@@ -4,6 +4,28 @@
       color: #000000;
       font-family: 'SORA', sans-serif;
       text-align: center;
+      h1, h2, {
+    font-family: var(--headline-font);
+    }
+    h1 {
+    font-size: calc(40px + (72 - 40) * (100vw - 400px) / (1800 - 400));
+    margin-bottom: 3rem;
+    }
+    h2 {
+    font-size: calc(32px + (48 - 32) * (100vw - 400px) / (1800 - 400));
+    margin-bottom: 1.5rem;
+    }
+    h3 {
+    font-size: calc(20px + (28 - 20) * (100vw - 400px) / (1800 - 400));
+    }
+    p {
+    font-size: calc(16px + (20 - 16) * (100vw - 400px) / (1800 - 400));
+    margin-bottom:2rem;
+    }
+
+    a {
+        font-size: calc(16px + (20 - 16) * (100vw - 400px) / (1800 - 400));
+        text-decoration: none;
     }
 
 
