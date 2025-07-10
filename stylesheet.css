@@ -8,32 +8,42 @@
 
 
 /* Navigation */
-header {
-  padding: 20px 0;
-  border-bottom: 1px solid #eee;
-  background: #fff;
+/* ==== BASE STYLES ==== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Sora', sans-serif;
+  font-size: 18px;
 }
 
 .Navbar {
-  width: 90%;
-  max-width: 1100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
- gap: 1550px;
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
 }
 
 nav ul {
-  list-style: none;
   display: flex;
-  gap: 25px;
+  list-style: none;
+  gap: 2rem;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #000;
-  font-weight: 250;
-  position: relative;
+  color: black;
+  font-weight: 500;
 }
 
 /* ==== HAMBURGER BUTTON ==== */
@@ -62,7 +72,7 @@ nav ul li a {
     font-size: 14px;
   }
 
- nav ul {
+  nav ul {
     flex-direction: column;
     position: absolute;
     top: 100%;
@@ -83,6 +93,7 @@ nav ul li a {
     display: block;
   }
 }
+
 
 nav ul li a.active::after {
   content: "";
