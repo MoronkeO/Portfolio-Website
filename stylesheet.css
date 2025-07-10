@@ -70,6 +70,7 @@ nav ul li a {
 @media screen and (max-width: 768px) {
   body {
     font-size: 14px;
+   h1: 2.5rem
   }
 
   nav ul {
