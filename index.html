@@ -57,6 +57,16 @@
   </section>
 
   <script>
+
+    document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  });
+    
   const text = "Hello! I'm Moronke, A Multi-media Creator. \nI code, I design. I bridge the gap between user’s experience and design.";
   const typingText = document.getElementById("typing-text");
   let i = 0;
@@ -92,15 +102,7 @@
 
 
     
-  document.addEventListener("DOMContentLoaded", function () {
-    const hamburger = document.getElementById("hamburger");
-    const navLinks = document.querySelector(".nav-links");
-
-    hamburger.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    });
-  });
-
+  
 
 
 
