@@ -93,8 +93,9 @@
 
 
    
-  function toggleMenu() {
-    document.getElementById("navLinks").classList.toggle("active");
+ function toggleMenu() {
+    const nav = document.getElementById("navMenu").querySelector("ul");
+    nav.classList.toggle("active");
   }
 </script>
 
