@@ -476,22 +476,96 @@ nav ul li a.active::after {
         }
 }
 
-/* Medium devices (i.e. tablets in landscape */
-@media (min-width: 900px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
 
-
-}
-
-/* Large devices (i.e. desktop) */
-
-@media (min-width: 1200px) {
-
-
-}
-
-/* X-Large devices (i.e. big desktop) */
-
-@media (min-width: 1800px) {
-
+        .responsive{
+            max-width:90%
+         }
+        .mainNavIcon {
+            display: none;
+        }
     
-}
+        nav {
+    
+            font-size: 10px;
+        }
+  
+        .btn {
+            width: 40%;
+    
+        }
+    h1{
+        font-size: 60px;
+    }
+        footer {
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+    
+    @media screen and (min-width: 300px) and (max-width: 750px) {
+        .header {
+            align-items: start;
+        }
+   
+        .Navbar {
+            height: 20px;
+            overflow: hidden;
+        }
+    
+        .mainNavItem {
+            width: 100%;
+            text-align: right;
+           
+        }
+    
+        .mainNavIcon {
+            display: block;
+        }
+    
+        .navExpanded {
+            height: 200px;
+        }
+        
+        .btn {
+            width: 30%;
+            font-size: 15px;
+    
+        }
+       
+        .container{
+            display: block;
+            align-items: center;
+            justify-content: center
+        }
+        
+     .responsive{
+        max-width:80%
+     }
+        h1 {
+            font-size: 50px;
+            font-weight: 500px;
+        }
+    
+        h2 {
+            font-size: 20px;
+        }
+
+        h3 {
+            font-size: 30px;
+        }
+    
+        .formInput {
+            width: 60%;
+        }
+    
+        label {
+            font-size: 15px;
+    
+        }
+        .responsive {
+            max-width: 90%;
+            align-self: center;
+        
+        }
