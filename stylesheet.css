@@ -32,6 +32,7 @@ nav ul {
     }
     nav ul > li {
     margin-top: 14px;
+    margin-bottom: 30px;
     flex-basis: 100%;
     }
     nav ul li a {
