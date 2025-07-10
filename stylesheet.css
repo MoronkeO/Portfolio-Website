@@ -17,16 +17,10 @@ header {
 .Navbar {
   width: 90%;
   max-width: 1100px;
-  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
  gap: 1550px;
-}
-
-.logo {
-  font-weight: 700;
-  font-size: 18px;
 }
 
 nav ul {
