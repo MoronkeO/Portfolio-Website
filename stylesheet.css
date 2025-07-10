@@ -4,18 +4,9 @@
       color: #000000;
       font-family: 'SORA', sans-serif;
       text-align: center;
-      h1, h2, {
-    font-family: var(--headline-font);
-    }
-    h1 {
-    font-size: calc(40px + (72 - 40) * (100vw - 400px) / (1800 - 400));
-  
-    p {
-    font-size: calc(16px + (20 - 16) * (100vw - 400px) / (1800 - 400));
-    margin-bottom:2rem;
     }
 
-    
+
 
 .Navbar {
   width: 90%;
@@ -31,15 +22,15 @@
 nav ul {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 20px;
   
 }
 
 nav ul li a {
   text-decoration: none;
   color: #000;
-  font-weight: 100;
-  position: sticky;
+  font-weight: 30;
+  position: relative;
   
 }
 
@@ -64,11 +55,9 @@ nav ul li a.active::after {
   text-transform: uppercase;
   font-size: 14px;
   margin-bottom: 10px;
-  margin-top: 50px
 }
 
 .hero h1 {
-  ont-size: calc(40px + (72 - 40) * (100vw - 400px) / (1800 - 400))
   font-size: 4.5rem;
   font-weight: 750;
   margin-top: 30px;
@@ -231,13 +220,13 @@ header {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 25px;
 }
 
 nav ul li a {
   text-decoration: none;
   color: #000;
-  font-weight: 500;
+  font-weight: 250;
   position: relative;
 }
 
@@ -425,135 +414,3 @@ nav ul li a.active::after {
   opacity: 1;
   transform: translateY(0);
 }
-
-
-/* Small devices (i.e. tablets in portrait) */
-@media (min-width: 600px) {
-    nav {
-        height: 60px;
-        }
-    .navexpanded {
-        height:60px;
-    }
-    .navexpanded #close-icon {
-        display: none;
-    }
-        nav ul {
-        flex-direction: row;
-        align-items: baseline;
-        }
-        nav ul > li {
-        flex-basis: auto;
-        }
-        #logo {
-        flex-basis: auto;
-        }
-        #menu-icon {
-        display: none;
-        }
-        section {
-            grid-template-columns: 15% 1fr 15%;
-        }
-        .two-columns {
-            
-            grid-template-columns:1fr 1fr;
-
-        }
-        .three-columns {
-            grid-template-columns:1fr 1fr 1fr;
-        }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-
-        .responsive{
-            max-width:90%
-         }
-        .mainNavIcon {
-            display: none;
-        }
-    
-        nav {
-    
-            font-size: 10px;
-        }
-  
-        .btn {
-            width: 40%;
-    
-        }
-    h1{
-        font-size: 60px;
-    }
-        footer {
-            p {
-                font-size: 18px;
-            }
-        }
-    }
-    
-    @media screen and (min-width: 300px) and (max-width: 750px) {
-        .header {
-            align-items: start;
-        }
-   
-        .Navbar {
-            height: 20px;
-            overflow: hidden;
-        }
-    
-        .mainNavItem {
-            width: 100%;
-            text-align: right;
-           
-        }
-    
-        .mainNavIcon {
-            display: block;
-        }
-    
-        .navExpanded {
-            height: 200px;
-        }
-        
-        .btn {
-            width: 30%;
-            font-size: 15px;
-    
-        }
-       
-        .container{
-            display: block;
-            align-items: center;
-            justify-content: center
-        }
-        
-     .responsive{
-        max-width:80%
-     }
-        h1 {
-            font-size: 50px;
-            font-weight: 500px;
-        }
-    
-        h2 {
-            font-size: 20px;
-        }
-
-        h3 {
-            font-size: 30px;
-        }
-    
-        .formInput {
-            width: 60%;
-        }
-    
-        label {
-            font-size: 15px;
-    
-        }
-        .responsive {
-            max-width: 90%;
-            align-self: center;
-        
-        }
