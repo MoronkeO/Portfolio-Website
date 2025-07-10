@@ -104,8 +104,7 @@ nav ul li a {
     right: 1.5rem;
   }
 }
-.project-card .img {
-    max-width: 100%;
+
 
 
 * Hero Section */
@@ -323,11 +322,9 @@ footer {
 }
 
 .project-card img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+ 
   border-radius: 8px; /* optional, for cleaner corners */
-  margin-bottom: 1rem;
+
  
 .project-info .tag {
   background: #fbc400;
