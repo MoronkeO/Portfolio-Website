@@ -128,6 +128,11 @@
   });
 
   cards.forEach(card => observer.observe(card));
+
+  function toggleMenu() {
+    const nav = document.getElementById("navMenu").querySelector("ul");
+    nav.classList.toggle("active");
+  }
 </script>
  
 </body>
