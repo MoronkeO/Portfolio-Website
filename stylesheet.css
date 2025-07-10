@@ -7,30 +7,38 @@
     }
 
 
+/* Navigation */
+header {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+
 .Navbar {
   width: 90%;
-  max-width: 1200px;
-
+  max-width: 1100px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1550px
 }
 
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+}
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
-  
+  gap: 25px;
 }
 
 nav ul li a {
   text-decoration: none;
   color: #000;
-  font-weight: 30;
+  font-weight: 250;
   position: relative;
-  
 }
 
 nav ul li a.active::after {
