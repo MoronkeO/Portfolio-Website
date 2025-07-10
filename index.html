@@ -11,28 +11,25 @@
 </head>
 <body>
     <header>
-        <nav>
-          <ul>
-            <li id="logo">
-              <a href="index.html#introduction"><img src="logo ro-01.png" alt="rologo" width="100" />
-              </a>
-            </li>
-            <li id="menu-icon"><a href="#"><i class="fa-solid fa-bars" title="Open the menu"></i></a></li>
-            <li id="close-icon">
-              <a href="#"><i class="fa-solid fa-x" title="Close the menu"></i></a>
-              </li>
-  
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Portfolio</a></li>
-            <li><a href="aboutme.html">About</a></li>
-          </ul>
-        </nav>
+        <div class="Navbar">
+            <a href="index.html" class="logo">
+                <img src="IMG/logo ro-01.png" alt="logo" width="100"></a>
+             <nav>
+        <ul>
+            
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="projects.html">Works</a></li>
+          <li><a href="aboutme.html">Profile</a></li>
+        </ul>
+      </nav>
+        </div>
+        
     </header>
 
     <section class="hero">
     <h1><span id="typing-text"></span></h1>
     <div class="hero-buttons">
-      <a href="projects.html" class="btn primary">View My Work</a>
+      <a href="Project.html" class="btn primary">View My Work</a>
     </div>
   </section>
 
@@ -58,9 +55,7 @@
   </section>
 
   <script>
-
-    
-  const text = "Hello! I'm Moronke, A Multi-media Creator. \nI code, I design. I bridge the gap between \nusers' experience and design.";
+  const text = "Hello! I'm Moronke, A Multi-media Creator. \nI code, I design. I bridge the gap between\nuser’s experience and design.";
   const typingText = document.getElementById("typing-text");
   let i = 0;
 
@@ -92,12 +87,7 @@
   if (fadeInSection) {
     observer.observe(fadeInSection);
   }
-
-
-    
-  
-
-
+</script>
 
 </script>
 </body>
