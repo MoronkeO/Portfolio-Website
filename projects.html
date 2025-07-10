@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Moronke Portfolio</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="Navbar">
+            <a href="index.html" class="logo">
+                <img src="IMG/logo ro-01.png" alt="logo" width="100"></a>
+             <nav>
+        <ul>
+            
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="projects.html" class="active">Works</a></li>
+          <li><a href="aboutme.html">About</a></li>
+        </ul>
+      </nav>
+        </div>
+        
+    </header>
+<section class="projects-section ">
+    <h1>MY PROJECTS</h1>
+    <p class="subheading">A collection of my creative work and technical projects</p>
+
+    <!-- Project 1 -->
+    <div class="project-card ">
+      <img src="./IMG/monkey escape loading page.jpg" alt="Monkey Escape" width="500px">
+      <div class="project-info">
+        <span class="tag">GAME DESIGN & DEVELOPMENT</span>
+        <h2>Monkey Escape</h2>
+        <p>Monkey Escape is a 2D Pixelated game created on GameMaker using GML coding. </p>
+        <br>
+        <p><strong>Software</strong></p>
+        <div class="tags">
+          <span>GameMaker Studio</span>
+          <span>Adobe Photoshop</span>
+          <span>Adobe Illustrator</span>
+        </div>
+        <div class="buttons">
+          <a href="https://www.behance.net/gallery/223561657/Monkey-Escape-Pixelated-Game" class="btn primary">View Project</a>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <img src="./IMG/bfit-01.png" alt="E-Commerce Platform" width="500px">
+      <div class="project-info">
+        <span class="tag">UI & UX DESIGN</span>
+        <h2>FITNESS APP</h2>
+        <p>A fitness app that serves as a personal trainer, calorie counter, and workout planner.</p>
+       <br>
+        <p><strong>Software</strong></p>
+        <div class="tags">
+          <span>Figma</span>
+          <span>Adobe Illustrator</span>
+          
+        </div>
+        <div class="buttons">
+          <a href="https://docs.google.com/presentation/d/1npV_7rdDmCdUZf0Xh0ZPMM9JH6nPykHP6plC-4o31gY/edit?slide=id.p#slide=id.p" class="btn primary">View Project</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <img src="./IMG/POSETER1-01.png" alt="E-Commerce Platform" width="500px">
+      <div class="project-info">
+        <span class="tag">ILLUSTRATION</span>
+        <h2>POSTERS</h2>
+        <p>Created everyday posters which tells a story when brought together at the same time makes sense individually. </p>
+       <br>
+        <p><strong>Software</strong></p>
+        <div class="tags">
+          <span>Adobe Illustrator</span>
+        </div>
+        <div class="buttons">
+          <a href="#" class="btn primary">View Project</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project-card">
+      <img src="./IMG/wd.png" alt="E-Commerce Platform" width="500px">
+      <div class="project-info">
+        <span class="tag">WEB DEVELOPMENT</span>
+        <h2>PIXEL THROUGH TIME</h2>
+        <p>Created a website that showed video game history from the 1970s to 2020s </p>
+       <br>
+        <p><strong>Software</strong></p>
+        <div class="tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+        <div class="buttons">
+          <a href="https://moronkeo.github.io/Pixel-Through-Time/index.html" class="btn primary">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<script>
+  const cards = document.querySelectorAll('.project-card');
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target); // Only fade in once
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  cards.forEach(card => observer.observe(card));
+</script>
+ 
+</body>
+<footer>
+    <img src="IMG/logo ro-01.png" alt="logo" width="100" justify="center">
+    <div class="footerlinks">
+        <a href="index.html" class="icon-circle">,<img src="/IMG/mail_11913443.png" alt="mail me" width="22px"></a>
+        <a href="index.html" class="icon-circle">,<img src="/IMG/social_16033280.png" alt="mail me" width="20px"></a></div>
+        
+  </footer>
+</html>
+
+</body>

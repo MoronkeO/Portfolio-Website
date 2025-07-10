@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Moronke Portfolio</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="Navbar">
+            <a href="index.html" class="logo">
+                <img src="IMG/logo ro-01.png" alt="logo" width="100"></a>
+             <nav>
+        <ul>
+            
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="projects.html">Works</a></li>
+          <li><a href="aboutme.html">Profile</a></li>
+        </ul>
+      </nav>
+        </div>
+        
+    </header>
+
+    <section class="hero">
+    <h1><span id="typing-text"></span></h1>
+    <div class="hero-buttons">
+      <a href="Project.html" class="btn primary">View My Work</a>
+    </div>
+  </section>
+
+  <section class="what-i-do fade-in" id="whatIDo">
+    <h2>What I Do</h2>
+    <div class="services">
+      <div class="service">
+        <div class="icon">〈/〉</div>
+        <h3>Development</h3>
+        <p>Creating interactive experiences with clean, efficient code and responsive designs.</p>
+      </div>
+      <div class="service">
+        <div class="icon">🎨</div>
+        <h3>Design</h3>
+        <p>Crafting beautiful, user-centered designs that tell stories and connect.</p>
+      </div>
+      <div class="service">
+        <div class="icon">⚡</div>
+        <h3>Innovation</h3>
+        <p>Bridging the gap between creativity and technology to push ideas forward.</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+  const text = "Hello! I'm Moronke, A Multi-media Creator. \nI code, I design. I bridge the gap between\nuser’s experience and design.";
+  const typingText = document.getElementById("typing-text");
+  let i = 0;
+
+  function type() {
+    if (i < text.length) {
+      // Convert newlines to <br> for display
+      typingText.innerHTML += text.charAt(i) === "\n" ? "<br>" : text.charAt(i);
+      i++;
+      setTimeout(type, 20);
+    }
+  }
+
+  window.onload = type;
+
+  
+  const fadeInSection = document.querySelector('.what-i-do');
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target); // Remove if you only want it to happen once
+      }
+    });
+  }, {
+    threshold: 0.3
+  });
+
+  if (fadeInSection) {
+    observer.observe(fadeInSection);
+  }
+</script>
+
+</script>
+</body>
+<footer>
+    <img src="IMG/logo ro-01.png" alt="logo" width="100" justify="center">
+    <div class="footerlinks">
+        <a href="index.html" class="icon-circle">,<img src="/IMG/mail_11913443.png" alt="mail me" width="22px"></a>
+        <a href="index.html" class="icon-circle">,<img src="/IMG/social_16033280.png" alt="mail me" width="20px"></a></div>
+        
+  </footer>
+</html>
+
