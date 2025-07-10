@@ -46,6 +46,15 @@ nav ul li a {
   font-weight: 30;
 }
 
+nav ul li a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #fbc400;
+
 /* ==== HAMBURGER BUTTON ==== */
 .hamburger {
   display: none;
@@ -87,13 +96,7 @@ nav ul li a {
 
   nav ul.active {
     display: flex;
-   ontent: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 100%;
-  height: 2px;
-  background: #fbc400;
+  
   }
 
   .hamburger {
