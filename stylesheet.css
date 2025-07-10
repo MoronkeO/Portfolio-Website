@@ -19,7 +19,7 @@
 }
 
 
-nav ul {
+nav links {
   list-style: none;
   display: flex;
   gap: 20px;
@@ -34,12 +34,12 @@ nav ul li a {
   
 }
 
-nav ul li a.active: hover {
+nav links.active: hover {
   text-decoration: none;
     color: #fbc400
     
 }
-nav ul li a.active::after {
+nav links.active::after {
   content: "";
   position: absolute;
   left: 0;
