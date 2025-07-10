@@ -15,14 +15,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1800px
+  gap: 1700px
 }
 
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 20px;
   
 }
 
