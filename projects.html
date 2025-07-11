@@ -50,21 +50,7 @@
 </section>
 
 <script>
- const overlays = document.querySelectorAll('.project-overlay');
-
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target); // Stop observing once shown
-      }
-    });
-  }, {
-    threshold: 0.3
-  });
-
-  overlays.forEach(overlay => observer.observe(overlay));
-
+ 
   function toggleMenu() {
     const nav = document.getElementById("navMenu").querySelector("ul");
     nav.classList.toggle("active");
