@@ -50,26 +50,20 @@
 </section>
 
 <script>
- 
-  const cards = document.querySelectorAll('.project-overlay');
+ const overlays = document.querySelectorAll('.project-overlay');
 
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-        observer.unobserve(entry.target); // only trigger once
+        observer.unobserve(entry.target); // Stop observing once shown
       }
     });
   }, {
-    root: null,
-    threshold: 0.2, // triggers only when 20% of the card is visible
+    threshold: 0.3
   });
 
-  cards.forEach(card => {
-    observer.observe(card);
-  });
-
-
+  overlays.forEach(overlay => observer.observe(overlay));
 
   function toggleMenu() {
     const nav = document.getElementById("navMenu").querySelector("ul");
