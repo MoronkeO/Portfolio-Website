@@ -296,11 +296,17 @@ footer {
 }
 
 .slide .caption button {
-  background: #fff;
+  background: #fffFFF;
   border: none;
   padding: 0.5rem 1rem;
   font-weight: bold;
   cursor: pointer;
+}
+
+.slide .caption button:hover {
+  background-color: #fbc400;
+  color: #000000;
+  transform: scale(1.05);
 }
 
 .slide.active {
