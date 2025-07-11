@@ -257,55 +257,51 @@ footer {
   filter: brightness(0) invert(1); /* Makes icons white */
 }
 
-/**PROJECT BANNER**/
-/* Hero Section */
-.hero {
-  text-align: center;
-  padding: 80px 20px;
-}
-
-.hero .intro {
-  text-transform: uppercase;
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-
-.project-section h1 {
-  font-size: 4.5rem;
-  font-weight: 750;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  display: inline-block;
-}
-
-.subheading {
-  
- margin-top: -20px;
-  display: inline-block;
-  font-weight: 100;
-  font-size: 24px;
-  border-radius: 6px;
-  margin-bottom: 30px;
-}
-
 .project-banner {
- position: relative;
-  width: 100%;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
+.project-overlay {
+  position: relative;
+  height: 60vh; /* ✅ Bigger height */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 10px;
+  opacity: 0; /* ✅ For fade effect */
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* ✅ Zoom on hover */
+.project-overlay:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* ✅ Reveal on scroll */
+.project-overlay.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 .project-content {
-  text-align: center;
   color: #fff;
+  text-align: center;
   z-index: 2;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .project-content h2 {
   font-size: 3rem;
-  font-weight: 900;
+  font-weight: 800;
   margin-bottom: 1rem;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
 
 .project-content .btn {
@@ -321,76 +317,6 @@ footer {
 
 .project-content .btn:hover {
   background: #fbc400;
-}
-
-/* Responsive */
-@media screen and (max-width: 768px) {
-  .project-content h2 {
-    font-size: 2rem;
-  }
-
-  .project-overlay {
-    height: 60vh;
-  }
-}
-
-/* FADE-IN EFFECT WHEN VISIBLE */
-.project-banner {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.project-banner.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* HOVER ENLARGE EFFECT */
-.project-banner:hover {
-  transform: scale(1.02);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-
-
-.project-info {
-  flex: 1;
-  min-width: 300px;
-}
-
-.project-banner img {
- 
-  border-radius: 8px; /* optional, for cleaner corners */
-
- 
-.project-info .tag {
-  background: #fbc400;
-  font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 4px;
-  display: inline-block;
-  margin-bottom: 10px;
-}
-
-
-.project-info h2 {
-  margin: 10px 0;
-  font-size: 1.8rem;
-}
-
-.project-info p {
-  margin: 10px 0;
-}
-
-.tags span {
-  display: inline-block;
-  background: #eee;
-  padding: 6px 10px;
-  border-radius: 4px;
-  font-size: 14px;
-  margin: 5px 5px 5px 0;
 }
 
 .buttons {
