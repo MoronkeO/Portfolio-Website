@@ -1,1 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Moronke Portfolio</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+  
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="fade-in">
+    <div class="logo">CAPY</div>
+    <nav>
+      <a href="#">About</a>
+      <a href="#">Games</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
+  <section class="hero fade-in">
+    <h1>CRITTER CRUNCH</h1>
+    <p class="tagline">Buy Now!</p>
+    <button class="btn">▶ Buy Now</button>
+  </section>
+
+  <section class="screenshots fade-in">
+    <img src="screenshot1.jpg" alt="Screenshot 1">
+    <img src="screenshot2.jpg" alt="Screenshot 2">
+    <img src="screenshot3.jpg" alt="Screenshot 3">
+  </section>
+
+  <section class="about fade-in">
+    <div class="content">
+      <img src="big-critter.jpg" alt="Critter">
+      <div class="text">
+        <h2>So What is <strong>Critter Crunch?</strong></h2>
+        <p>Critter Crunch is an award-winning arcade-style puzzle game starring the lovable Biggs...</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="features fade-in">
+    <h2>Key Feature</h2>
+    <h3>CREATE FOOD CHAINS!</h3>
+    <p>With the unique food chain mechanic, players feed smaller critters to larger ones to make them pop!</p>
+  </section>
+
+  <section class="feature-blocks fade-in">
+    <div class="block">
+      <h4>Multiplayer Modes</h4>
+      <p>Co-op or battle each other online or locally.</p>
+    </div>
+    <div class="block">
+      <h4>Stunning Visuals</h4>
+      <p>Hand-animated characters and 1080p at 60fps.</p>
+    </div>
+    <div class="block">
+      <h4>Variety of Challenges</h4>
+      <p>Power Ups and Special Critters keep it fresh.</p>
+    </div>
+  </section>
+
+  <footer class="fade-in">
+    <p>&copy; 2025 Capybara Games</p>
+    <nav>
+      <a href="#">About</a>
+      <a href="#">Games</a>
+      <a href="#">Contact</a>
+      <a href="#">Privacy</a>
+    </nav>
+  </footer>
+
+  <script>
+    // Fade-in on scroll
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = {
+      threshold: 0.2,
+      rootMargin: "0px 0px -100px 0px"
+    };
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  </script>
+
+</body>
