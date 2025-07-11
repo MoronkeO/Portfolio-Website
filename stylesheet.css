@@ -270,7 +270,7 @@ footer {
   margin-bottom: 10px;
 }
 
-h1 {
+.project-section h1 {
   font-size: 4.5rem;
   font-weight: 750;
   margin-top: 30px;
@@ -291,7 +291,7 @@ h1 {
 .project-banner {
  position: relative;
   width: 100%;
- max-height: 180px
+ max-height: 250px
   overflow: hidden;
 }
 
