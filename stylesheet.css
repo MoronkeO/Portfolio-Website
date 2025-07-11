@@ -291,7 +291,7 @@ footer {
 .project-banner {
  position: relative;
   width: 100%;
- min-height: 300px
+height: 70%;
   overflow: hidden;
 }
 
