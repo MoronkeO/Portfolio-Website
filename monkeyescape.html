@@ -5,23 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Moronke Portfolio</title>
   <link rel="stylesheet" href="stylesheet.css" />
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-<header class="fade-in">
-    <div class="logo">CAPY</div>
-    <nav>
-      <a href="#">About</a>
-      <a href="#">Games</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
+    <header>
+        <div class="Navbar">
+            <a href="index.html" class="logo">
+                <img src="logo ro-01.png" alt="logo" width="100"></a>
+
+          <!-- Hamburger icon -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+             <nav id="navMenu">
+        <ul>
+            
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="projects.html" class="active">Works</a></li>
+          <li><a href="aboutme.html">Profile</a></li>
+        </ul>
+      </nav>
+        </div>
+        
+    
+    </header>
 
   <section class="hero fade-in">
-    <h1>CRITTER CRUNCH</h1>
-    <p class="tagline">Buy Now!</p>
-    <button class="btn">▶ Buy Now</button>
+    <img src="game start.jpg" width="150%">
   </section>
 
   <section class="screenshots fade-in">
