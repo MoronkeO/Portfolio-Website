@@ -270,7 +270,7 @@ footer {
   margin-bottom: 10px;
 }
 
-.hero h1 {
+.project-section h1 {
   font-size: 4.5rem;
   font-weight: 750;
   margin-top: 30px;
@@ -278,7 +278,7 @@ footer {
   display: inline-block;
 }
 
-.highlight {
+.project-section subheading {
   
  margin-top: -20px;
   display: inline-block;
