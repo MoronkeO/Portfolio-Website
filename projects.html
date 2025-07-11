@@ -29,47 +29,43 @@
         
     
     </header>
-<section class="slider">
-    <div class="slide fade">
-      <img src="game start.jpg" alt="Monkey escape">
-      <div class="caption">
-        <h2>GAME DEVELOPMENT</h2>
-        <button>See More</button>
-      </div>
+<section class="projects-section ">
+    <h1>MY PROJECTS</h1>
+    <p class="subheading">A collection of my creative work and technical projects</p>
+
+    <section class="project-banner">
+  <div class="project-overlay" style="background-image: url('game start.jpg');">
+    <div class="project-content">
+      <h2>GAME DEVELOPMENT</h2>
+      <a href="#" class="btn primary">See More</a>
     </div>
-    <div class="slide fade">
-      <img src="BFITHEALINE.jpg" alt="Snugs & Mugs">
-      <div class="caption">
-        <h2>UI/UX DESIGN</h2>
-        <button>See More</button>
-      </div>
+  </div>
+
+       <div class="project-overlay" style="background-image: url('BFITHEADLINE.jpg');">
+    <div class="project-content">
+      <h2>UI/UX DESIGN</h2>
+      <a href="#" class="btn primary">See More</a>
     </div>
-    <div class="slide fade">
-      <img src="https://via.placeholder.com/1200x600?text=Winx+Magazine" alt="Winx Magazine">
-      <div class="caption">
-        <h2>WINK MAGAZINE</h2>
-        <button>See More</button>
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
 
 <script>
- let slideIndex = 0;
-const slides = document.querySelectorAll(".slide");
+ onst cards = document.querySelectorAll('.project-overlay');
 
-function showSlides() {
-  slides.forEach((slide, i) => {
-    slide.classList.remove("active");
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target); // Only fade in once
+      }
+    });
+  }, {
+    threshold: 0.1
   });
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-  slides[slideIndex - 1].classList.add("active");
-  setTimeout(showSlides, 4000); // Change every 4 seconds
-}
 
-window.onload = showSlides;
+  cards.forEach(card => observer.observe(card));
+
+  
   function toggleMenu() {
     const nav = document.getElementById("navMenu").querySelector("ul");
     nav.classList.toggle("active");
