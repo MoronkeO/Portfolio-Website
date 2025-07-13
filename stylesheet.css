@@ -358,6 +358,8 @@ nav ul li a.active {
 .project-content .btn {
   background: white;
   color: black;
+  width: 180px;
+  text-align: center;
   padding: 12px 24px;
   font-weight: 600;
   border: none;
