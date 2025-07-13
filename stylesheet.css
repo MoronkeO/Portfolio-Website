@@ -60,6 +60,11 @@ nav ul li a {
     cursor: pointer;
     color: #000000;
   }
+.back-arrow a {
+  text-decoration: none;  
+  color: inherit;       
+  display: inline-block;  
+}
 
 /* ==== HAMBURGER BUTTON ==== */
 .hamburger {
