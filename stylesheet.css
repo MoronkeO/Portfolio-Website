@@ -84,7 +84,9 @@ nav ul li a {
     font-size: 14px;
   }
   
-
+.hero fade-in{
+ width: 85%;
+}
   .hamburger {
     display: block;
     position: absolute;
