@@ -509,3 +509,28 @@ nav ul li a.active {
   opacity: 1;
   transform: translateY(0);
 }
+
+/**VIDEO**/
+.video-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: block;
+}
+@media (max-width: 768px) {
+  .video-container {
+    padding: 10px;
+  }
+
+  .video-container video {
+    border-radius: 8px;
+  }
+}
