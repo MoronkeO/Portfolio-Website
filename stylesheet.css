@@ -257,6 +257,30 @@ footer {
   filter: brightness(0) invert(1); /* Makes icons white */
 }
 
+/**NAVBAR**/
+/* Default link styles */
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+  background-color: #fbc400;  /* Or any hover color */
+  color: #000000;
+  border-radius: 5px;
+}
+
+/* Active link (clicked/current page) */
+nav ul li a.active {
+  background-color: ##fbc400;  /* Active link color */
+  color: #000000;
+  border-radius: 5px;
+}
+
+
 /**PROJECT BANNER**/
 /* Hero Section */
 .hero {
